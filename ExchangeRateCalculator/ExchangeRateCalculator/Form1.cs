@@ -190,14 +190,14 @@ namespace SettlementExchangeRateCalculator
                                               $"{Environment.NewLine} " +
                                               $"Zobowiązanie + kurs na fakturze < kurs spłaty = Ujemna różnica kursowa";
 
-            var positiveReceivableExplanation = $"Dodatnia różnica kursowa: {Environment.NewLine} " +
+            var positiveReceivableExplanation = $"Dodatnia różnica kursowa: {Environment.NewLine}" +
                                               $"SKANSKA otrzymała zapłatę należności po wyższym kursie niż kurs określony na fakturze," +
-                                              $" czyli otrzymała więcej pieniędzy nie wynikało to z faktury." +
+                                              $" czyli otrzymała więcej pieniędzy niż wynikało to z faktury." +
                                               $"{Environment.NewLine} " +
                                               $"{Environment.NewLine} " +
                                               $"Należność + kurs na fakturze < kurs potwierdzenia otrzymania płatności = Dodatnia różnica kursowa"; 
 
-            var negativeReceivableExplanation = $"Ujemna różnica kursowa. {Environment.NewLine} " +
+            var negativeReceivableExplanation = $"Ujemna różnica kursowa. {Environment.NewLine}" +
                                               $"SKANSKA otrzymała zapłatę należności po niższym kursie niż kurs określony na fakturze," +
                                               $" czyli otrzymała mniej pieniędzy niż wynikało to z faktury." +
                                               $"{Environment.NewLine} " +
