@@ -48,6 +48,7 @@
             this.settlementTypeExplanationTextBox = new System.Windows.Forms.TextBox();
             this.exchangeRateTypeExplanationTextBox = new System.Windows.Forms.TextBox();
             this.splitter = new System.Windows.Forms.Panel();
+            this.clearFormButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -247,11 +248,23 @@
             this.splitter.Size = new System.Drawing.Size(211, 2);
             this.splitter.TabIndex = 20;
             // 
+            // clearFormButton
+            // 
+            this.clearFormButton.Location = new System.Drawing.Point(164, 244);
+            this.clearFormButton.Margin = new System.Windows.Forms.Padding(2);
+            this.clearFormButton.Name = "clearFormButton";
+            this.clearFormButton.Size = new System.Drawing.Size(118, 33);
+            this.clearFormButton.TabIndex = 21;
+            this.clearFormButton.Text = "Wyczyść wszystko";
+            this.clearFormButton.UseVisualStyleBackColor = true;
+            this.clearFormButton.Click += new System.EventHandler(this.clearFormButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(710, 294);
+            this.Controls.Add(this.clearFormButton);
             this.Controls.Add(this.splitter);
             this.Controls.Add(this.exchangeRateTypeExplanationTextBox);
             this.Controls.Add(this.settlementTypeExplanationTextBox);
@@ -303,6 +316,7 @@
         private System.Windows.Forms.TextBox settlementTypeExplanationTextBox;
         private System.Windows.Forms.TextBox exchangeRateTypeExplanationTextBox;
         private System.Windows.Forms.Panel splitter;
+        private System.Windows.Forms.Button clearFormButton;
     }
 }
 

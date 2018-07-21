@@ -225,9 +225,34 @@ namespace SettlementExchangeRateCalculator
             exchangeRateTypeExplanationTextBox.Text = explanation;
         }
 
+        private void ClearAllFields()
+        {
+            ClearControl(settlementTypeComboBox);
+            ClearControl(settlementAmountTextBox);
+            ClearControl(creationExchangeRateTextBox);
+            ClearControl(foreignCreationAmountTextBox);
+            ClearControl(clearingSettlemntTextBox);
+            ClearControl(foreignClearingAmuntTextBox);
+            ClearControl(exchangeRateAmountTextBox);
+            ClearControl(exchangeRateTypeTextBox);
+            ClearControl(accountingSchemaTextBox);
+            ClearControl(settlementTypeExplanationTextBox);
+            ClearControl(exchangeRateTypeExplanationTextBox);
+        }
+
+        private void ClearControl(Control control)
+        {
+            control.Text = string.Empty;
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void clearFormButton_Click(object sender, EventArgs e)
+        {
+            ClearAllFields();
         }
     }
 }
